@@ -1,0 +1,14 @@
+// import './numbers.js';
+// import './dates.js';
+// import './timers-intervals.js';
+// import './constructors.js';
+// import './classes.js';
+// import './static-properties.js';
+// import './private-properties.js';
+// import './object-create.js';
+// import './solid-principals.js';
+// import './get-post.js';
+// import './promise.js';
+// import './async-await.js';
+// import './order-async-function.js';
+import './dom-control.js';

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./dist/app.js" type="module"></script>
+    <!-- <script src="./dist/app.js" type="module"></script> -->
     <link rel="stylesheet" href="./dist/bundle.css" />
     <link rel="stylesheet" href="./static/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,8 +14,40 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class="filter"></div>
+    <form>
+      <select class="initial-currency">
+        <option value="KZT">
+          <span>KZT</span>
+        </option>
+        <option value="RUB">
+          <span>RUB</span>
+        </option>
+        <option value="USD">
+          <span>USD</span>
+        </option>
+      </select>
+      <select class="convert-currency">
+        <option value="KZT">
+          <span>KZT</span>
+        </option>
+        <option value="RUB">
+          <span>RUB</span>
+        </option>
+        <option value="USD">
+          <span>USD</span>
+        </option>
+      </select>
+      <input class="amount" type="number">
+      <button class="submit-button" type="submit">Рассчитать</button>
+      <input class="searching" type="text">
+    </form>
+    <div class="converted-sum" style="border: 1px solid tomato; width: 100px; height: 50px;"></div>
+    
+    <div class="root" id="root"></div>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
